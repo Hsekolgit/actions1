@@ -3,8 +3,8 @@ on: push
 jobs: 
   my-first:
     name: myfirst workflow 
-    run_on: ubuntu:latest
-  steps:
+    runs-on: ubuntu:latest
+    steps:
     - name: running job
       run: echo "welcome to workflow"
     - name: list file
