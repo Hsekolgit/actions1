@@ -11,10 +11,14 @@ jobs:
       - name: checkout
         uses: actions/checkout@v6
       - name: running job
-        run: echo "welcome to workflow"
+        run: |
+          echo "welcome to workflow"
+          ls -lart
+          cat README.md
+        
 
-      - name: list file
-        run: ls
+      #- name: list file
+       # run: ls
 
-      - name: read
-        run: cat README.md
+      #- name: read
+       # run: cat README.md
