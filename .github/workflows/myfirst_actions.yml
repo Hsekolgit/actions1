@@ -15,6 +15,13 @@ jobs:
           echo "welcome to workflow"
           ls -lart
           cat README.md
+  second_job:
+    name: mysecond job
+    runs-on: ubuntu-latest
+    steps:
+      - name: my check
+        run: echo "second jobs"
+  
         
 
       #- name: list file
